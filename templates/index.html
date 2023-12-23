@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 30px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background-color: #ca2424;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        a {
+            
+            text-decoration: none;
+            align-items: center;
+            color: white;
+        }
+        a:hover {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the TODO LIST APP!</h1>
+    <p>To start using our app, please follow the links below:</p>
+    <ul style="text-align: center;">
+        <li><a href="{% url 'login' %}">Login</a></li>
+        <li><a href="{% url 'register' %}">Register</a></li>
+    </ul>
+</body>
+</html>
